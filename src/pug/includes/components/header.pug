@@ -1,0 +1,30 @@
+header.masthead
+    .container.px-5
+        .row.gx-5.align-items-center
+            .col-lg-6
+                // Mashead text and app badges
+                .mb-5.mb-lg-0.text-center.text-lg-start
+                    h1.display-1.lh-1.mb-3 One stop solution for pets
+                    p.lead.fw-normal.text-muted.mb-5 Join our Pet community and share your experiences. With PawPaw you’ll be able to find services or buy items to take care of your pet.
+                    .d-flex.flex-column.flex-lg-row.align-items-center
+                        div ANDROID and IOS apps coming soon
+                            p
+                                a.me-lg-3.mb-4.mb-lg-0(href='#!')
+                                    img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
+                                a(href='#!')
+                                    img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
+            .col-lg-6
+                // Masthead device mockup feature
+                .masthead-device-mockup
+                    include ../decoration/gradient-circle
+                    include ../decoration/shape-1
+                    include ../decoration/shape-2
+                    .device-wrapper
+                        .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                            .screen.bg-black
+                                // PUT CONTENTS HERE:
+                                // * * This can be a video, image, or just about anything else.
+                                // * * Set the max width of your media to 100% and the height to
+                                // * * 100% like the demo example below.
+                                video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                    source(src='assets/img/demo-screen.mp4', type='video/mp4')

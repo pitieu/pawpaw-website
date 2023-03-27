@@ -1,0 +1,47 @@
+section#community
+    .container.px-5
+        h2.font-alt.space Pet Community
+        .row.gx-5.align-items-center
+            .col-lg-8.order-lg-1.mb-5.mb-lg-0
+                .container-fluid.px-5
+                    .row.gx-5
+                        .col-md-6.mb-5
+                            // Feature item
+                            .text-center
+                                i.bi-share.icon-feature.text-gradient.d-block.mb-3
+                                h3.font-alt Connect with pet lovers
+                                p.text-muted.mb-0 Find services related to grooming and washing.
+                        .col-md-6.mb-5
+                            // Feature item
+                            .text-center
+                                i.bi-camera.icon-feature.text-gradient.d-block.mb-3
+                                h3.font-alt Share Photos & Videos
+                                p.text-muted.mb-0 Buy or sell pet related items like food, bones, pet leashes and more.
+                    .row
+                        .col-md-6.mb-5.mb-md-0
+                            // Feature item
+                            .text-center
+                                i.bi-calendar-event.icon-feature.text-gradient.d-block.mb-3
+                                h3.font-alt Discover Events
+                                p.text-muted.mb-0 Connect with other pet lovers and share images and videos.
+                        .col-md-6
+                            // Feature item
+                            .text-center
+                                i.bi-shop.icon-feature.text-gradient.d-block.mb-3
+                                h3.font-alt Promote your business
+                                p.text-muted.mb-0 Your business can strive by directly being closer to your clients.
+            .col-lg-4.order-lg-0
+                // Features section device mockup
+                .features-device-mockup
+                    include ../decoration/gradient-circle
+                    include ../decoration/shape-1
+                    include ../decoration/shape-2
+                    .device-wrapper
+                        .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                            .screen.bg-black
+                                // PUT CONTENTS HERE:
+                                // * * This can be a video, image, or just about anything else.
+                                // * * Set the max width of your media to 100% and the height to
+                                // * * 100% like the demo example below.
+                                video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                    source(src='assets/img/demo-screen.mp4', type='video/mp4')

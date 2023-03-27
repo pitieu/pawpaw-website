@@ -1,0 +1,49 @@
+
+section#services.bg-light
+    .container.px-5
+        .row.gx-5.align-items-center
+            .col-lg-4.order-lg-1
+                // Features section device mockup
+                .features-device-mockup
+                    include ../decoration/gradient-circle
+                    include ../decoration/shape-1
+                    include ../decoration/shape-2
+                    .device-wrapper
+                        .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                            .screen.bg-black
+                                // PUT CONTENTS HERE:
+                                // * * This can be a video, image, or just about anything else.
+                                // * * Set the max width of your media to 100% and the height to
+                                // * * 100% like the demo example below.
+                                video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                    source(src='assets/img/demo-screen.mp4', type='video/mp4')
+            .col-lg-8.order-lg-0.mb-5.mb-lg-0
+                h2.font-alt.space Pet Services  
+                .container-fluid.px-5
+                    .row.gx-5
+                        .col-md-6.mb-5
+                            // Feature item
+                            .text-center
+                                i.bi-phone.icon-feature.text-gradient.d-block.mb-3
+                                h3.font-alt Grooming
+                                p.text-muted.mb-0 Spoil your lovely pets with the best pet grooming near you. You can also conveniently call them to groom at home.
+                        .col-md-6.mb-5
+                            // Feature item
+                            .text-center
+                                i.icon-pet-sitting.icon-feature.text-gradient.d-block.mb-3
+                                h3.font-alt Pet Sitting
+                                p.text-muted.mb-0 Going away stress-free with trusted pet sitter taking care of your pets at home.
+                    .row
+                        .col-md-6.mb-5.mb-md-0
+                            // Feature item
+                            .text-center
+                                i.icon-pet-hotel.icon-feature.text-gradient.d-block.mb-3
+                                h3.font-alt Pet Hotel
+                                p.text-muted.mb-0 Find pet walker to take your pets out for a fun walk so you can focus on your day.
+                        .col-md-6
+                            // Feature item
+                            .text-center
+                                i.bi-three-dots.icon-feature.text-gradient.d-block.mb-3
+                                h3.font-alt Many more services
+                                p.text-muted.mb-0 A huge variety of services are available like pet walking, pet training, breeding etc...
+            

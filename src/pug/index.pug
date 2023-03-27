@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title New Age - Start Bootstrap Theme
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
+
+        // Google fonts
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+        
+        // Insipration
+        // https://wptf.themepul.com/dogi/
+        // https://preview.colorlib.com/theme/appson/appson/index.html#
+
+    body#page-top
+        // Navigation
+        include includes/components/navigation.pug
+
+        // Mashead header
+        include includes/components/header.pug
+
+        // Quote/testimonial aside
+        aside.text-center.bg-gradient-primary-to-secondary
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-xl-8
+                        .h2.fs-1.text-white.mb-4 An intuitive solution to a common problem that we all face, wrapped up in a single app!
+                        //- img(src='assets/img/tnw-logo.svg', alt='...', style='height: 3rem;')
+
+        // Community
+        include includes/components/community.pug
+       
+        // Pet Services
+        include includes/components/pet_services.pug
+
+        // Marketplace
+        include includes/components/marketplace.pug
+
+        // Call to action section
+        //- section.cta
+        //-     .cta-content
+        //-         .container.px-5
+        //-             h2.text-white.display-1.lh-1.mb-4
+        //-                 | Stop waiting.
+        //-                 br
+        //-                 | Start building.
+        //-             a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='https://startbootstrap.com/theme/new-age', target='_blank') Download for free
+
+        // App badge section
+        include includes/components/get_app.pug
+
+        // Footer
+        include includes/components/footer.pug
+        
+        include includes/components/feedback-modal.pug
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
